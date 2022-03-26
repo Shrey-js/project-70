@@ -18,30 +18,13 @@ export default class BottomTabNavigator extends Component {
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
 
-              // if (route === "Ride") {
-              //   iconName = "bicycle";
-              // } else if (route === "Ride History") {
-              //   iconName = "time";
-              // }
-            
-              // if (route.name = "Ride") {
-              //   iconName = "bicycle";
-              // } else if (route.name = "Ride History") {
-              //   iconName = "time";
-              // }
+              if (route.name === "Ride") {
+                iconName = "bicycle";
+              } else if (route.name === "Ride History") {
+                iconName = "time";
+              }
 
-              // if (route.name === Ride) {
-              //   iconName = "bicycle";
-              // } else if (route.name === Ride History) {
-              //   iconName = "time";
-              // }
-
-              // if (route.name === "Ride") {
-              //   iconName = "bicycle";
-              // } else if (route.name === "Ride History") {
-              //   iconName = "time";
-              // }
-
+              // You can return any component that you like here!
               return (
                 <Ionicons
                   name={iconName}
